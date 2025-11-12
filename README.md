@@ -55,7 +55,29 @@ npm run dev
    git remote add origin git@github.com:<your-username>/gift-shop.git
    git branch -M main
    git push -u origin main
-## Step 3: Deploy Your App with AWS Amplify
+   
+### Step 2: Initialize GitHub Repository
+
+1. **Create a new repository on GitHub**
+
+   - Go to [GitHub](https://github.com/) and sign in.  
+   - Click **New repository**.  
+   - Enter the repository name, e.g., `gift-shop`.  
+   - Choose **Public** and click **Create repository**.
+
+2. **Push the local project to GitHub**
+
+   Open a terminal in your project root and run:
+
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin git@github.com:<your-username>/gift-shop.git
+   git branch -M main
+   git push -u origin main
+   
+### Step 3: Deploy Your App with AWS Amplify
 
 1. **Create an Amplify App**
 
@@ -93,7 +115,7 @@ npm run dev
      cache:
        paths:
          - node_modules/**/*
-## Step 4: Continuous Deployment
+### Step 4: Continuous Deployment
 
 - AWS Amplify provides **continuous deployment** for your app.  
 - Every time you push changes to the `main` branch of your GitHub repository, Amplify automatically:
